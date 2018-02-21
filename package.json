@@ -1,10 +1,10 @@
 {
-  "name": "hwk-template",
+  "name": "hwk-02",
   "version": "0.0.1",
   "description": "testing linters for homework",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aca-betconstruct/hwk-template.git"
+    "url": "git+https://github.com/aca-betconstruct/hwk-02.git"
   },
   "scripts": {
     "test": "gulp lint:styles",
@@ -16,7 +16,7 @@
   ],
   "author": "hakobpogh",
   "license": "MIT",
-  "homepage": "https://github.com/aca-betconstruct/hwk-template#readme",
+  "homepage": "https://github.com/aca-betconstruct/hwk-02#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
