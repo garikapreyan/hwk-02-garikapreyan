@@ -1,8 +1,88 @@
 html, body {
   height: 100%;
+  width: 100%;
   overflow: hidden;
+  display: inline-block;
 }
 
 body {
   margin: 0;
+  background-image: url("back.jpg");
+  background-size: cover;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  text-align: center;
+  white-space: nowrap;
+  }
+
+.c2 , .c3 {
+  box-shadow: 0 0 1px lightgray;
+  display: inline-block;
+  height: 450px;
+  width: 350px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  margin: 5% auto;
+  cursor: pointer;
+  background: white;
+}
+
+.i1 {
+  display: inline-block;
+  height: 50%;
+  width: 100%;
+  border-bottom-right-radius: 100px;
+}
+
+.c2:hover , .c3:hover {
+  animation-name: zoom;
+  animation-duration: .2;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.p1 {
+  text-align: center;
+  font-size: 25px;
+  color: orange;
+}
+
+.p2 {
+  text-align: center;
+  color: black;
+}
+
+.p3 {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  font-family: book antiqua;
+  color: orange;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1,1);
+  }
+
+  to {
+    transform: scale(1.1,1.1);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .c2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .c3 {
+    display: block;
+  }
 }
